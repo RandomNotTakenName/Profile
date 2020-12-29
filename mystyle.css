@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Playfair+Display:900|Open+Sans');
 
+head {
+  font-family: 'Permanent Marker', cursive;
+  align-items: center;
+}
+
 body {
   background: linear-gradient(135deg, 6fff00, 07f);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-header {
-  font-family: 'Permanent Marker', cursive;
-  align-items: center;
-}
+
