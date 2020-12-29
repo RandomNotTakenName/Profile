@@ -6,7 +6,7 @@ head {
 }
 
 body {
-  background: linear-gradient(135deg, 6fff00, 07f);
+  background: linear-gradient(135deg, #6fff00, #07f);
   background-size: cover;
   background-repeat: no-repeat;
 }
