@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Playfair+Display:900|Open+Sans');
 
-header {
+#header {
   font-family: 'Permanent Marker', cursive;
   margin: 0 auto;
   text-align: center;
 }
 
-body {
+#body {
   background: linear-gradient(135deg, #6fff00, #07f);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-contacts {
+#contacts {
   float: left;
 }
 
-info {
+#info {
   float: right;
 }
