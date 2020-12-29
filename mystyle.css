@@ -11,4 +11,10 @@ body {
   background-repeat: no-repeat;
 }
 
+contacts {
+  float: left;
+}
 
+info {
+  float: right;
+}
