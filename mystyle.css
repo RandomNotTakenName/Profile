@@ -2,7 +2,8 @@
 
 header {
   font-family: 'Permanent Marker', cursive;
-  align-items: center;
+  margin: 0 auto;
+  text-align: center;
 }
 
 body {
