@@ -1,10 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    animation: gradient 4s ease infinite;
+    animation: gradient 20s ease infinite;
     background:linear-gradient(135deg, rgb(0, 255, 34) 0%, rgba(33, 150, 243) 25%, rgba(148, 38, 167) 50%, rgba(255, 0, 4) 75%, rgba(255, 235, 59) 100%);
     background-size: 150% 400%;
-    background-repeat: no-repeat;/* 
+    background-repeat: no-repeat;
     display: flex;
-    flex-direction: row; */
+    flex-direction: row;
+    margin-top: 20px;
 }
 
 @keyframes gradient {
@@ -18,3 +24,43 @@ body {
     background-position: 51% 0%;
   }
 }
+
+nav {
+  position: fixed;
+  top: calc(50% - 191px);
+  left: 25px;
+}
+
+a {
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+
+a>img {
+  width: 34px;
+  height: 34px;
+  object-fit: cover;
+  position: relative;
+  top: 8px;
+  left: 8px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.info {
+  padding-left: 100px;
+  width: 100%;
+  text-align: center;
+}
+/* 
+.info>img {
+  width: ;
+  height: 34px;
+} */
+
+
+
