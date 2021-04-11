@@ -8,8 +8,6 @@ body {
     background:linear-gradient(135deg, rgb(0, 255, 34) 0%, rgba(33, 150, 243) 25%, rgba(148, 38, 167) 50%, rgba(255, 0, 4) 75%, rgba(255, 235, 59) 100%);
     background-size: 150% 400%;
     background-repeat: no-repeat;
-    display: flex;
-    flex-direction: row;
     margin-top: 20px;
 }
 
@@ -22,6 +20,15 @@ body {
   }
   100% {
     background-position: 51% 0%;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 0%
+  }
+  to {
+    margin-left: 100%
   }
 }
 
@@ -51,16 +58,32 @@ ul {
   padding: 0;
 }
 
-.info {
-  padding-left: 100px;
-  width: 100%;
+section {
+  margin-left: 100px;
+  width: calc(100% - 100px);
   text-align: center;
 }
-/* 
-.info>img {
-  width: ;
-  height: 34px;
-} */
 
+#slider {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 
+.image {
+  animation: 2s linear 1s slidein;
+}
+
+.imageContainer {
+  box-sizing: content-box;
+  overflow: hidden;
+}
+
+.arrow {
+  margin: 40px;
+  background-color: black;
+  width: 20px;
+  height: 20px;
+}
 
