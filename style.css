@@ -76,8 +76,8 @@ section {
 } */
 
 .image {
-  width: 500px;
-  height: 500px;
+  width: 70vmin;
+  height: 70vmin;
   object-fit: cover;
 }
 
