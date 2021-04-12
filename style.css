@@ -71,8 +71,14 @@ section {
   align-items: center;
 }
 
-.image {
+/* .image {
   animation: 2s linear 1s slidein;
+} */
+
+.image {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
 }
 
 .imageContainer {
@@ -87,3 +93,17 @@ section {
   height: 20px;
 }
 
+.sliderButton {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+}
+
+.sliderButtons {
+  width: 100px;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px 50%;
+}
