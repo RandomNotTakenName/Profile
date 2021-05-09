@@ -8,7 +8,6 @@ body {
     background:linear-gradient(135deg, rgb(0, 255, 34) 0%, rgba(33, 150, 243) 25%, rgba(148, 38, 167) 50%, rgba(255, 0, 4) 75%, rgba(255, 235, 59) 100%);
     background-size: 150% 400%;
     background-repeat: no-repeat;
-    margin-top: 20px;
 }
 
 @keyframes gradient {
@@ -34,8 +33,19 @@ body {
 
 nav {
   position: fixed;
-  top: calc(50% - 191px);
-  left: 25px;
+  top: calc(50% - 150px);
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav-list li {
+  margin: 20px 10px;
 }
 
 a {
@@ -59,9 +69,23 @@ ul {
 }
 
 section {
-  margin-left: 100px;
-  width: calc(100% - 100px);
+  margin: 20px 0 0 300px;
   text-align: center;
+}
+
+.frame {
+  width: 480px;
+  height: 580px;
+  background-color: white;
+  font-family: 'Dancing Script', cursive;
+  font-size: 25;
+}
+
+.frame>img {
+  width: 440px;
+  height: 480px;
+  object-fit: cover;
+  margin-top: 20px;
 }
 
 #slider {
@@ -105,5 +129,11 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 20px 50%;
+  margin: 20px calc(50% - 50px);
+}
+
+.contacts {
+  display: flex;
+  flex-direction: row;
+  margin: 10px calc(50% - 175px);
 }
