@@ -33,10 +33,6 @@ body {
   }
 }
 
-.dunno {
-  font-family: 'Dancing Script', cursive;
-}
-
 nav {
   position: fixed;
   top: calc(50% - 150px);
@@ -96,6 +92,10 @@ section {
   height: 480px;
   object-fit: cover;
   margin-top: 20px;
+}
+
+.frame>span {
+  font-family: 'Dancing Script', cursive;
 }
 
 .box {
