@@ -1,9 +1,11 @@
+:root{
+  font-size: 22px;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap&family=Permanent+Marker&display=swap');
 
 body {
     animation: gradient 20s ease infinite;
@@ -42,7 +44,6 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  font-size: 1.5em;
   font-weight: bold;
 }
 
@@ -50,25 +51,8 @@ nav {
   margin: 20px 10px;
 }
 
-a {
-  display: block;
-  width: 50px;
-  height: 50px;
-}
-
-a>img {
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
 section {
-  margin: 20px 0 0 300px;
+  margin: 20px 0 0 250px;
   text-align: center;
 }
 
@@ -78,24 +62,24 @@ section {
 }
 
 .frame {
-  width: 480px;
-  height: 580px;
+  width: 430px;
+  height: 515px;
   background-color: white;
-  font-size: 25;
   transform-origin: top right;
   transform: rotate(-15deg);
-  margin: 20px 0 150px -100px;
+  margin: -10px 0 150px -100px;
 }
 
 .frame>img {
-  width: 440px;
-  height: 480px;
+  width: 390px;
+  height: 430px;
   object-fit: cover;
   margin-top: 20px;
 }
 
 .frame>span {
   font-family: 'Dancing Script', cursive;
+  font-size: 1.1em;
 }
 
 .box {
@@ -109,14 +93,13 @@ section {
   transform-origin: top left;
   transform: rotate(15deg);
   text-align: left;
-  font-size: 1.3em;
-  margin: 20px;
+  margin: 20px 40px;
 }
 
-.box>h2 {
-  align-self: center;
+.box>h1 {
   text-align: center;
-  padding-left: 200px;
+  padding: 10px 10px 10px 100px;
+  font-family: 'Roboto', cursive;
 }
 
 #slider {
@@ -160,7 +143,7 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 20px calc(50% - 50px);
+  margin: 20px calc(50% - 40px);
 }
 
 .contacts {
@@ -168,3 +151,81 @@ section {
   flex-direction: row;
   margin: 10px calc(50% - 175px);
 }
+
+.icon {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.Skills {
+  display: grid;
+  grid-template-columns: 500px 500px;
+  grid-template-rows: 450px 150px;
+  grid-gap: 30px;
+}
+
+.technical {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 3fr 1fr 3fr 1fr;
+  grid-gap: 10px;
+}
+
+.techIcon {
+  position: relative;
+  align-self: center;
+  width: 245px;
+  height: 150px;
+  object-fit: fill;
+}
+
+.soft {
+  display: grid;
+  grid-template-columns: 100px 300px;
+  grid-template-rows: repeat(8, 50px);
+}
+
+.softIcon {
+  position: relative;
+  align-self: center;
+  width: 100px;
+  height: 50px;
+  object-fit: fill;
+}
+
+.Skills>div>span, .heading {
+  margin: auto;
+}
+
+.languages {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: grid;
+  grid-template-columns: 500px 500px;
+  grid-template-rows: 50px 50px 50px;
+}
+
+.heading {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+@font-face {
+  font-family: "Dancing Script"; 
+  src: url("fonts/DancingScript-Regular.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+  }
+
+  @font-face {
+    font-family: "Permanent Marker"; 
+    src: url("fonts/PermanentMarker-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    }
