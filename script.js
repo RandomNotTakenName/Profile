@@ -1,5 +1,5 @@
 
-var i, prev=1, imageArray=["photo/1.jpg","photo/2.jpg","photo/3.jpg","photo/4.jpg"];
+var i=0, prev=1, imageArray=["photo/1.jpg","photo/2.jpg","photo/3.jpg","photo/4.jpg"];
 
 function slider() {
     if(i<0) i=3;
