@@ -8,4 +8,5 @@ function slider() {
     document.getElementById('Button' + prev).classList.toggle('active');
     document.getElementById('Button' + (i + 1)).classList.toggle('active');
     prev=(i+1);
+    console.log('i= ' + i + '; prev=' + prev);
 }
