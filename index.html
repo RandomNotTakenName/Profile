@@ -22,7 +22,7 @@
   </nav>
   <section class="Greeting">
     <div class="frame">
-      <img src="myphoto.jpg" alt="My photo">
+      <img class="frameImage" src="myphoto.jpg" alt="My photo">
       <span>Arlashyn Viktor<br>Web Developer</span>
     </div>
     <div class="box">
@@ -68,38 +68,46 @@
     </div>
     <div class="languages">
       <h3 class="heading">Languages</h3>
-        <span>Ukrainian - Native</span>
-        <span>English - <a href="https://www.efset.org/cert/uvWRfY">Proficient</a></span>
-        <span>Russian - Proficient</span>
-        <span>Polish - Intermediate</span>
+      <span>Ukrainian - Native</span>
+      <span>English - <a href="https://www.efset.org/cert/uvWRfY">Proficient</a></span>
+      <span>Russian - Proficient</span>
+      <span>Polish - Intermediate</span>
     </div>
   </section>
-  <section>
-    <h3>Work experience</h3>
-    <p>Autocontroller-operator</p>
-    <h4>Chassis Brakes International Wroclaw (Hitachi Automotive Systems Group)</h4>
-    <p>October 2018 - 2021</p>
-    <h3>Education</h3>
-    <h4>National Technical University of Ukraine<br>“Igor Sikorsky Kyiv Polytechnic Institute”</h4>
-    <p>Mechanical engineering technology<br>Incomplete higher</p>
+  <section class="Experience">
+    <div>
+      <h3>Work experience</h3>
+      <span>Chassis Brakes International Wroclaw<br>(Hitachi Automotive Systems
+        Group)<br>Autocontroller-operator<br>October 2018 - March 2021</span>
+      <img class="Image" src="photo/KPI.jpg" alt="KPI">
+    </div>
+    <div>
+      <h3>Education</h3>
+      <span>National Technical University of Ukraine<br>“Igor Sikorsky Kyiv Polytechnic Institute”<br>Mechanical
+        engineering technology<br>Incomplete higher</span>
+      <img class="Image" src="photo/CBI.jpg" alt="CBI">
+    </div>
   </section>
   <section>
     <div id="slider">
-      <div class="arrow" onclick="slider(i--)"></div>
+      <div class="arrow left" onclick="slider(i--)"></div>
       <div class="imageContainer">
-        <img id="target" class="image" src="photo/1.jpg">
+        <img id="target" class="photo" src="photo/1.jpg">
       </div>
-      <div class="arrow" onclick="slider(i++)"></div>
+      <div class="arrow right" onclick="slider(i++)"></div>
     </div>
     <div class="sliderButtons">
-      <div class="sliderButton" onclick="slider(i=0)"></div>
-      <div class="sliderButton" onclick="slider(i=1)"></div>
-      <div class="sliderButton" onclick="slider(i=2)"></div>
-      <div class="sliderButton" onclick="slider(i=3)"></div>
+      <div id="Button1" class="sliderButton active" onclick="slider(i=0)"><span>1</span></div>
+      <div id="Button2" class="sliderButton" onclick="slider(i=1)"><span>2</span></div>
+      <div id="Button3" class="sliderButton" onclick="slider(i=2)"><span>3</span></div>
+      <div id="Button4" class="sliderButton" onclick="slider(i=3)"><span>4</span></div>
     </div>
   </section>
-  <section class="Contacts">
+  <section>
     <ul class="contacts">
+      <li>
+        <h3>Contact me: </h3>
+      </li>
       <li><a href="https://github.com/RandomNotTakenName" target="_blank"><img class="icon" src="Logo\github-icon.svg"
             alt="logo"></a></li>
       <li><a href="https://www.linkedin.com/in/bad-habit/" target="_blank"><img class="icon"
