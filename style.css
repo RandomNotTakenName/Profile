@@ -8,13 +8,13 @@
 }
 
 body {
-    animation: gradient 20s ease infinite;
+    animation: river 20s ease infinite;
     background:linear-gradient(135deg, rgb(0, 255, 34) 0%, rgba(33, 150, 243) 25%, rgba(148, 38, 167) 50%, rgba(255, 0, 4) 75%, rgba(255, 235, 59) 100%);
     background-size: 150% 400%;
     background-repeat: no-repeat;
 }
 
-@keyframes gradient {
+@keyframes river {
   0% {
     background-position: 51% 0%;
   }
@@ -26,12 +26,12 @@ body {
   }
 }
 
-@keyframes slidein {
-  from {
-    margin-left: 0%
+@keyframes slide {
+  50% {
+    transform: translateX(10px);
   }
-  to {
-    margin-left: 100%
+  100% {
+    transform: translateX(-10px);
   }
 }
 
@@ -141,6 +141,11 @@ section {
   border-top: 25px solid transparent;
   border-bottom: 25px solid transparent;
   border-left: 50px solid rgb(0, 0, 0);
+  animation-direction: reverse;
+}
+
+.moving {
+  animation: slide 0.5s ease;
 }
 
 .sliderButton {
@@ -267,9 +272,9 @@ ul {
   font-weight: normal; 
   }
 
-  @font-face {
-    font-family: "Permanent Marker"; 
-    src: url("fonts/PermanentMarker-Regular.ttf") format("truetype"); 
-    font-style: normal; 
-    font-weight: normal; 
-    }
+@font-face {
+  font-family: "Permanent Marker"; 
+  src: url("fonts/PermanentMarker-Regular.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+  }
