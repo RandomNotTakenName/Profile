@@ -14,13 +14,14 @@
 <body>
   <nav>
     <ul class="nav-list">
-      <li>Home</li>
-      <li>Skills</li>
-      <li>Education<br>and Experience</li>
-      <li>Contacts</li>
+      <li onclick="navigator('Greeting')">Home</li>
+      <li onclick="navigator('Skills')">Skills</li>
+      <li onclick="navigator('Experience')">Education<br>and Experience</li>
+      <li onclick="navigator('Slider')">Slider</li>
+      <li onclick="navigator('Contacts')">Contacts</li>
     </ul>
   </nav>
-  <section class="Greeting">
+  <section id="Greeting" class="Greeting">
     <div class="frame">
       <img class="frameImage" src="myphoto.jpg" alt="My photo">
       <span>Arlashyn Viktor<br>Web Developer</span>
@@ -35,7 +36,7 @@
       <span class="box-content">music and others</span>
     </div>
   </section>
-  <section class="Skills">
+  <section id="Skills" class="Skills">
     <div class="technical">
       <h3 class="heading">Tech skills</h3>
       <img class="techIcon" src="Logo\html-5.svg" alt="html5">
@@ -74,7 +75,7 @@
       <span>Polish - Intermediate</span>
     </div>
   </section>
-  <section class="Experience">
+  <section id="Experience" class="Experience">
     <div>
       <h3>Work experience</h3>
       <span>Chassis Brakes International Wroclaw<br>(Hitachi Automotive Systems
@@ -88,8 +89,9 @@
       <img class="Image" src="photo/CBI.jpg" alt="CBI">
     </div>
   </section>
-  <section>
-    <div id="slider">
+  <section id="Slider">
+    <h3>Look at that cutie</h3>
+    <div id="sliderContainer">
       <div id="lsb" class="arrow left" onclick="animatron(i--)"></div>
       <div class="imageContainer">
         <img id="target" class="photo" src="photo/1.jpg">
@@ -103,7 +105,7 @@
       <div id="Button4" class="sliderButton" onclick="slider(i=3)"><span>4</span></div>
     </div>
   </section>
-  <section>
+  <section id="Contacts">
     <ul class="contacts">
       <li>
         <h3>Contact me: </h3>

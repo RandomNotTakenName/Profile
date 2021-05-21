@@ -1,5 +1,5 @@
 
-var i = 0, prev = 1, pushed, moving, imageArray = ["photo/1.jpg", "photo/2.jpg", "photo/3.jpg", "photo/4.jpg"];
+var i = 0, prev = 1, pushed, moving, target, imageArray = ["photo/1.jpg", "photo/2.jpg", "photo/3.jpg", "photo/4.jpg"];
 
 function slider() {
     if (i < 0) i = 3;
@@ -20,3 +20,13 @@ function animatron() {
     }, 500);
     slider();
 }
+
+function navigator(target) {
+    let goTo=document.getElementById(target);
+    goTo.scrollIntoView({top: 0, behavior: 'smooth'});
+}
+
+
+
+
+/* element.scrollHeight - element.scrollTop === element.clientHeight */

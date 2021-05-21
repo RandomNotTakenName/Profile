@@ -37,7 +37,7 @@ body {
 
 nav {
   position: fixed;
-  top: calc(50% - 150px);
+  top: calc(50% - 180px);
 }
 
 .nav-list {
@@ -63,8 +63,8 @@ section {
 }
 
 .frame {
-  width: 29vw;
-  height: 57vh;
+  width: 31vw;
+  height: 75vh;
   background-color: white;
   transform-origin: top right;
   transform: rotate(-15deg);
@@ -72,8 +72,8 @@ section {
 }
 
 .frameImage {
-  width: 27vw;
-  height: 48vh;
+  width: 29vw;
+  height: 62vh;
   object-fit: cover;
   margin-top: 20px;
 }
@@ -103,7 +103,7 @@ section {
   font-family: 'Roboto', cursive;
 }
 
-#slider {
+#sliderContainer {
   display: flex;
   flex-direction: row;
   justify-content: center;
