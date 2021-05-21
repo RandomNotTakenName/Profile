@@ -7,13 +7,6 @@
   padding: 0;
 }
 
-body {
-    animation: river 20s ease infinite;
-    background:linear-gradient(135deg, rgb(0, 255, 34) 0%, rgba(33, 150, 243) 25%, rgba(148, 38, 167) 50%, rgba(255, 0, 4) 75%, rgba(255, 235, 59) 100%);
-    background-size: 150% 400%;
-    background-repeat: no-repeat;
-}
-
 @keyframes river {
   0% {
     background-position: 51% 0%;
@@ -33,6 +26,13 @@ body {
   100% {
     transform: translateX(-10px);
   }
+}
+
+body {
+    animation: river 20s ease infinite;
+    background:linear-gradient(135deg, rgb(0, 255, 34) 0%, rgba(33, 150, 243) 25%, rgba(148, 38, 167) 50%, rgba(255, 0, 4) 75%, rgba(255, 235, 59) 100%);
+    background-size: 150% 400%;
+    background-repeat: no-repeat;
 }
 
 nav {
@@ -63,8 +63,8 @@ section {
 }
 
 .frame {
-  width: 430px;
-  height: 515px;
+  width: 29vw;
+  height: 57vh;
   background-color: white;
   transform-origin: top right;
   transform: rotate(-15deg);
@@ -72,8 +72,8 @@ section {
 }
 
 .frameImage {
-  width: 390px;
-  height: 430px;
+  width: 27vw;
+  height: 48vh;
   object-fit: cover;
   margin-top: 20px;
 }
@@ -110,10 +110,6 @@ section {
   align-items: center;
 }
 
-/* .image {
-  animation: 2s linear 1s slidein;
-} */
-
 .photo {
   width: 70vmin;
   height: 70vmin;
@@ -129,17 +125,15 @@ section {
   margin: 40px;
   width: 0px;
   height: 0px;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
 }
 
 .left {
-  border-top: 25px solid transparent;
-  border-bottom: 25px solid transparent;
   border-right: 50px solid rgb(0, 0, 0);
 }
 
 .right {
-  border-top: 25px solid transparent;
-  border-bottom: 25px solid transparent;
   border-left: 50px solid rgb(0, 0, 0);
   animation-direction: reverse;
 }
@@ -216,8 +210,8 @@ ul {
 .techIcon {
   position: relative;
   align-self: center;
-  width: 245px;
-  height: 150px;
+  width: 17vw;
+  height: 16vh;
   object-fit: fill;
 }
 
@@ -230,8 +224,8 @@ ul {
 .softIcon {
   position: relative;
   align-self: center;
-  width: 100px;
-  height: 50px;
+  width: 7vw;
+  height: 5.5vh;
   object-fit: fill;
 }
 
@@ -243,8 +237,8 @@ ul {
   grid-column-start: 1;
   grid-column-end: 3;
   display: grid;
-  grid-template-columns: 500px 500px;
-  grid-template-rows: 50px 50px 50px;
+  grid-template-columns: 35vw 35vw;
+  grid-template-rows: 5.5vh 5.5vh 5.5vh;
 }
 
 .heading {
@@ -259,8 +253,8 @@ ul {
 }
 
 .Image {
-  width: 450px;
-  height: 300px;
+  width: 31vw;
+  height: 33vh;
   object-fit: cover;
   margin-top: 20px;
 }
