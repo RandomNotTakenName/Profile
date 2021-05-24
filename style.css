@@ -259,6 +259,15 @@ ul {
   margin-top: 20px;
 }
 
+/* form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin: 10px;
+} */
+
 @font-face {
   font-family: "Dancing Script"; 
   src: url("fonts/DancingScript-Regular.ttf") format("truetype"); 

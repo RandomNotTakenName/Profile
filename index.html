@@ -106,9 +106,16 @@
     </div>
   </section>
   <section id="Contacts">
+    <h3>Feel free to ask any question below</h3>
+    <form action="mailer.php" method="post">
+      <input type="text" name="fullName" placeholder="Introduce yourself" required>
+      <input type="text" name="subject" placeholder="Subject" required>
+      <input type="email" name="email" placeholder="E-mail, optionally">
+      <input type="submit" value="Go!">
+    </form>
     <ul class="contacts">
       <li>
-        <h3>Contact me: </h3>
+        <h3>...or contact me elsewhere: </h3>
       </li>
       <li><a href="https://github.com/RandomNotTakenName" target="_blank"><img class="icon" src="Logo\github-icon.svg"
             alt="logo"></a></li>
