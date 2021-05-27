@@ -107,11 +107,16 @@
   </section>
   <section id="Contacts">
     <h3>Feel free to ask any question below</h3>
-    <form action="mailer.php" method="post">
-      <input type="text" name="fullName" placeholder="Introduce yourself" required>
-      <input type="text" name="subject" placeholder="Subject" required>
-      <input type="email" name="email" placeholder="E-mail, optionally">
-      <input type="submit" value="Go!">
+    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mqkwqzpp"
+      method="post">
+      <label for="full-name">Introduce yourself:</label><br>
+      <input type="text" name="name" id="full-name" placeholder="Full name" required="true"><br>
+      <label for="message">Message:</label><br>
+      <textarea cols="60" rows="4" name="message" id="message" placeholder="Subject" required="true"></textarea><br>
+      <label for="email-address">Email Address:</label><br>
+      <input type="email" name="_replyto" id="email-address" placeholder="Optionally"><br>
+      <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+      <input class="button" type="submit" value="Go!">
     </form>
     <ul class="contacts">
       <li>
@@ -130,7 +135,8 @@
             src="Logo\facebook.svg" alt="logo"></a></li>
       <li><a href="https://www.instagram.com/bad_habit123" target="_blank"><img class="icon"
             src="Logo\instagram-icon.svg" alt="logo"></a></li>
-      <li><a href="mailto:vitekarlashin@i.ua" target="_blank"><img class="icon" src="Logo\mail.svg" alt="logo"></a></li>
+      <li><a href="mailto:vitekarlashin@i.ua" target="_blank"><img class="icon" src="Logo\mail.svg" alt="logo"></a>
+      </li>
     </ul>
   </section>
 </body>

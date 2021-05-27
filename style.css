@@ -259,14 +259,13 @@ ul {
   margin-top: 20px;
 }
 
-/* form {
-  display: flex;
-  flex-direction: column;
+form, form * {
+  margin: 10px;
 }
 
-input {
-  margin: 10px;
-} */
+.button {
+  padding: 5px 12px;
+}
 
 @font-face {
   font-family: "Dancing Script"; 
