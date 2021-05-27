@@ -47,6 +47,10 @@ nav {
   font-weight: bold;
 }
 
+.nav-list>li {
+  opacity: 0.3;
+}
+
 .nav-list>li, .contacts>li {
   margin: 20px 10px;
 }
@@ -59,7 +63,6 @@ section {
 .Greeting {
   display: flex;
   flex-direction: row;
-  margin-top: 20px;
 }
 
 .frame {
@@ -88,6 +91,8 @@ section {
   transform: rotate(-15deg);
   display: flex;
   flex-direction: column;
+  padding-left: 50px;
+  justify-content: center;
 }
 
 .box-content {
@@ -97,9 +102,9 @@ section {
   margin: 20px 40px;
 }
 
-.box>h1 {
+h1 {
   text-align: center;
-  padding: 10px 10px 10px 100px;
+  margin-left: 100px;
   font-family: 'Roboto', cursive;
 }
 
@@ -263,8 +268,16 @@ form, form * {
   margin: 10px;
 }
 
+.bigger {
+  font-size: 16px;
+}
+
 .button {
   padding: 5px 12px;
+}
+
+.nav-list>.here {
+  opacity: 1;
 }
 
 @font-face {

@@ -14,20 +14,20 @@
 <body>
   <nav>
     <ul class="nav-list">
-      <li onclick="navigator('Greeting')">Home</li>
-      <li onclick="navigator('Skills')">Skills</li>
-      <li onclick="navigator('Experience')">Education<br>and Experience</li>
-      <li onclick="navigator('Slider')">Slider</li>
-      <li onclick="navigator('Contacts')">Contacts</li>
+      <li id="navGreeting" class="here" onclick="navigator('Greeting')">Home</li>
+      <li id="navSkills" onclick="navigator('Skills')">Skills</li>
+      <li id="navExperience" onclick="navigator('Experience')">Education<br>and Experience</li>
+      <li id="navSlider" onclick="navigator('Slider')">Slider</li>
+      <li id="navContacts" onclick="navigator('Contacts')">Contacts</li>
     </ul>
   </nav>
+  <h1>Hello and a warm welcome<br>to my resume web-page</h1>
   <section id="Greeting" class="Greeting">
     <div class="frame">
       <img class="frameImage" src="myphoto.jpg" alt="My photo">
       <span>Arlashyn Viktor<br>Web Developer</span>
     </div>
     <div class="box">
-      <h1 class="box-content">Hello and a warm welcome<br>to my resume web-page</h1>
       <h3 class="box-content">Some basic information about me:</h3>
       <span class="box-content"><b>Home country, curent location:</b> Ukraine</span>
       <span class="box-content"><b>Age:</b> 25</span>
@@ -110,13 +110,13 @@
     <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mqkwqzpp"
       method="post">
       <label for="full-name">Introduce yourself:</label><br>
-      <input type="text" name="name" id="full-name" placeholder="Full name" required="true"><br>
+      <input class="bigger" type="text" name="name" id="full-name" placeholder="Full name" required="true"><br>
       <label for="message">Message:</label><br>
-      <textarea cols="60" rows="4" name="message" id="message" placeholder="Subject" required="true"></textarea><br>
+      <textarea class="bigger" cols="60" rows="4" name="message" id="message" placeholder="Subject" required="true"></textarea><br>
       <label for="email-address">Email Address:</label><br>
-      <input type="email" name="_replyto" id="email-address" placeholder="Optionally"><br>
+      <input class="bigger" type="email" name="_replyto" id="email-address" placeholder="Optionally"><br>
       <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-      <input class="button" type="submit" value="Go!">
+      <input class="bigger button" type="submit" value="Go!">
     </form>
     <ul class="contacts">
       <li>
