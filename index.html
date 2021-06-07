@@ -1,9 +1,11 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="script.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Profile</title>
   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -14,15 +16,15 @@
 <body>
   <nav>
     <ul class="nav-list">
-      <li id="navGreeting" class="here" onclick="navigator('Greeting')">Home</li>
-      <li id="navSkills" onclick="navigator('Skills')">Skills</li>
-      <li id="navExperience" onclick="navigator('Experience')">Education<br>and Experience</li>
-      <li id="navSlider" onclick="navigator('Slider')">Slider</li>
-      <li id="navContacts" onclick="navigator('Contacts')">Contacts</li>
+      <li id="navGreeting" class="navi here" onclick="navigator('Greeting')">Home</li>
+      <li id="navSkills" class="navi" onclick="navigator('Skills')">Skills</li>
+      <li id="navExperience" class="navi" onclick="navigator('Experience')">Experience</li>
+      <li id="navSlider" class="navi" onclick="navigator('Slider')">Slider</li>
+      <li id="navContacts" class="navi" onclick="navigator('Contacts')">Contacts</li>
     </ul>
   </nav>
-  <h1>Hello and a warm welcome<br>to my resume web-page</h1>
-  <section id="Greeting" class="Greeting">
+  <h1 id="Greeting">Hello and a warm welcome<br>to my resume web-page</h1>
+  <section class="Greeting">
     <div class="frame">
       <img class="frameImage" src="myphoto.jpg" alt="My photo">
       <span>Arlashyn Viktor<br>Web Developer</span>
@@ -39,32 +41,32 @@
   <section id="Skills" class="Skills">
     <div class="technical">
       <h3 class="heading">Tech skills</h3>
-      <img class="techIcon" src="Logo\html-5.svg" alt="html5">
-      <img class="techIcon" src="Logo\css-3.svg" alt="css">
+      <img class="techIcon" src="Logo/html-5.svg" alt="html5">
+      <img class="techIcon" src="Logo/css-3.svg" alt="css">
       <span>HTML5</span>
       <span>CSS3</span>
-      <img class="techIcon" src="Logo\github-icon.svg" alt="git">
-      <img class="techIcon" src="Logo\javascript.svg" alt="js">
+      <img class="techIcon" src="Logo/github-icon.svg" alt="git">
+      <img class="techIcon" src="Logo/javascript.svg" alt="js">
       <span>Git</span>
       <span>JavaScript</span>
     </div>
     <div class="soft">
       <h3 class="heading">Soft skills</h3>
-      <img src="Logo\Learnability.svg" alt="icon" class="softIcon">
+      <img src="Logo/Learnability.svg" alt="icon" class="softIcon">
       <span>Learnability</span>
-      <img src="Logo\Calmness.svg" alt="icon" class="softIcon">
+      <img src="Logo/Calmness.svg" alt="icon" class="softIcon">
       <span>Calmness</span>
-      <img src="Logo\Adaptability.svg" alt="icon" class="softIcon">
+      <img src="Logo/Adaptability.svg" alt="icon" class="softIcon">
       <span>Adaptability</span>
-      <img src="Logo\Sociability.svg" alt="icon" class="softIcon">
+      <img src="Logo/Sociability.svg" alt="icon" class="softIcon">
       <span>Sociability</span>
-      <img src="Logo\Self-development.svg" alt="icon" class="softIcon">
+      <img src="Logo/Self-development.svg" alt="icon" class="softIcon">
       <span>Self-development</span>
-      <img src="Logo\Development.svg" alt="icon" class="softIcon">
+      <img src="Logo/Development.svg" alt="icon" class="softIcon">
       <span>Willing for a further development</span>
-      <img src="Logo\Management.svg" alt="icon" class="softIcon">
+      <img src="Logo/Management.svg" alt="icon" class="softIcon">
       <span>Time management</span>
-      <img src="Logo\Routine.svg" alt="icon" class="softIcon">
+      <img src="Logo/Routine.svg" alt="icon" class="softIcon">
       <span>Readiness for routine work</span>
     </div>
     <div class="languages">
@@ -76,15 +78,15 @@
     </div>
   </section>
   <section id="Experience" class="Experience">
-    <div>
+    <div class="exp">
       <h3>Work experience</h3>
-      <span>Chassis Brakes International Wroclaw<br>(Hitachi Automotive Systems
+      <span class="expText">Chassis Brakes International Wroclaw<br>(Hitachi Automotive Systems
         Group)<br>Autocontroller-operator<br>October 2018 - March 2021</span>
       <img class="Image" src="photo/KPI.jpg" alt="KPI">
     </div>
-    <div>
+    <div class="exp">
       <h3>Education</h3>
-      <span>National Technical University of Ukraine<br>“Igor Sikorsky Kyiv Polytechnic Institute”<br>Mechanical
+      <span class="expText">National Technical University of Ukraine<br>“Igor Sikorsky Kyiv Polytechnic Institute”<br>Mechanical
         engineering technology<br>Incomplete higher</span>
       <img class="Image" src="photo/CBI.jpg" alt="CBI">
     </div>
@@ -94,7 +96,7 @@
     <div id="sliderContainer">
       <div id="lsb" class="arrow left" onclick="animatron(i--)"></div>
       <div class="imageContainer">
-        <img id="target" class="photo" src="photo/1.jpg">
+        <img id="target" class="photo" src="photo/1.jpg" alt="Doge">
       </div>
       <div id="rsb" class="arrow right" onclick="animatron(i++)"></div>
     </div>
@@ -110,32 +112,30 @@
     <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mqkwqzpp"
       method="post">
       <label for="full-name">Introduce yourself:</label><br>
-      <input class="bigger" type="text" name="name" id="full-name" placeholder="Full name" required="true"><br>
+      <input class="bigger" type="text" name="name" id="full-name" placeholder="Full name" required><br>
       <label for="message">Message:</label><br>
-      <textarea class="bigger" cols="60" rows="4" name="message" id="message" placeholder="Subject" required="true"></textarea><br>
+      <textarea class="bigger" rows="4" name="message" id="message" placeholder="Subject" required></textarea><br>
       <label for="email-address">Email Address:</label><br>
       <input class="bigger" type="email" name="_replyto" id="email-address" placeholder="Optionally"><br>
       <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
       <input class="bigger button" type="submit" value="Go!">
     </form>
+    <h3>...or contact me elsewhere: </h3>
     <ul class="contacts">
-      <li>
-        <h3>...or contact me elsewhere: </h3>
-      </li>
-      <li><a href="https://github.com/RandomNotTakenName" target="_blank"><img class="icon" src="Logo\github-icon.svg"
+      <li><a href="https://github.com/RandomNotTakenName" target="_blank"><img class="icon" src="Logo/github-icon.svg"
             alt="logo"></a></li>
       <li><a href="https://www.linkedin.com/in/bad-habit/" target="_blank"><img class="icon"
-            src="Logo\linkedin-icon.svg" alt="logo"></a></li>
-      <li><a href="https://t.me/Bad_Habit" target="_blank"><img class="icon" src="Logo\telegram.svg" alt="logo"></a>
+            src="Logo/linkedin-icon.svg" alt="logo"></a></li>
+      <li><a href="https://t.me/Bad_Habit" target="_blank"><img class="icon" src="Logo/telegram.svg" alt="logo"></a>
       </li>
-      <li><a href="https://join.skype.com/invite/nQkswZPAKe5J" target="_blank"><img class="icon" src="Logo\skype.svg"
+      <li><a href="https://join.skype.com/invite/nQkswZPAKe5J" target="_blank"><img class="icon" src="Logo/skype.svg"
             alt="logo"></a>
       </li>
       <li><a href="https://www.facebook.com/profile.php?id=100013375237791" target="_blank"><img class="icon"
-            src="Logo\facebook.svg" alt="logo"></a></li>
+            src="Logo/facebook.svg" alt="logo"></a></li>
       <li><a href="https://www.instagram.com/bad_habit123" target="_blank"><img class="icon"
-            src="Logo\instagram-icon.svg" alt="logo"></a></li>
-      <li><a href="mailto:vitekarlashin@i.ua" target="_blank"><img class="icon" src="Logo\mail.svg" alt="logo"></a>
+            src="Logo/instagram-icon.svg" alt="logo"></a></li>
+      <li><a href="mailto:arlashyn.viktor@gmail.com" target="_blank"><img class="icon" src="Logo/mail.svg" alt="logo"></a>
       </li>
     </ul>
   </section>

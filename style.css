@@ -1,4 +1,4 @@
-:root{
+html {
   font-size: 22px;
 }
 
@@ -38,6 +38,7 @@ body {
 nav {
   position: fixed;
   top: calc(50% - 180px);
+  z-index: 1;
 }
 
 .nav-list {
@@ -47,11 +48,20 @@ nav {
   font-weight: bold;
 }
 
-.nav-list>li {
-  opacity: 0.3;
+.navi {
+  opacity: .3;
+  font-size: .7em;
+  height: 30px;
+  transition-duration: 1s;
 }
 
-.nav-list>li, .contacts>li {
+.here {
+  opacity: 1;
+  transform-origin: left;
+  transform: scale(2);
+}
+
+.navi, .contacts>li {
   margin: 20px 10px;
 }
 
@@ -113,6 +123,7 @@ h1 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin: 0 20px;
 }
 
 .photo {
@@ -124,10 +135,10 @@ h1 {
 .imageContainer {
   box-sizing: content-box;
   overflow: hidden;
+  margin: 40px;
 }
 
 .arrow {
-  margin: 40px;
   width: 0px;
   height: 0px;
   border-top: 25px solid transparent;
@@ -148,9 +159,9 @@ h1 {
 }
 
 .sliderButton {
-  width: 25px;
-  height: 25px;
-  margin: 20px 10px;
+  width: 1.14em;
+  height: 1.14em;
+  margin: 0 10px;
   border: 3px solid rgb(0, 0, 0);
   border-radius: 50%;
   font-weight: bold;
@@ -244,6 +255,7 @@ ul {
   display: grid;
   grid-template-columns: 35vw 35vw;
   grid-template-rows: 5.5vh 5.5vh 5.5vh;
+  margin: auto;
 }
 
 .heading {
@@ -257,27 +269,37 @@ ul {
   justify-content: space-evenly;
 }
 
+.exp {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.expText {
+  margin: 10px;
+}
+
 .Image {
   width: 31vw;
   height: 33vh;
   object-fit: cover;
-  margin-top: 20px;
+  margin: auto;
 }
 
 form, form * {
-  margin: 10px;
+  margin: 0.5em;
 }
 
 .bigger {
   font-size: 16px;
 }
 
-.button {
-  padding: 5px 12px;
+textarea {
+  width: 60vw;
 }
 
-.nav-list>.here {
-  opacity: 1;
+.button {
+  padding: 5px 12px;
 }
 
 @font-face {
@@ -293,3 +315,169 @@ form, form * {
   font-style: normal; 
   font-weight: normal; 
   }
+
+@media screen and (max-width: 980px) {
+
+html {
+  font-size: 18px;
+}
+
+h1 {
+  margin: auto;
+  padding-top: 50px;
+}
+
+nav {
+  top: 0;
+  width: 100vw;
+  background-color: white;
+}
+
+.nav-list {
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.navi {
+  margin: auto;
+  transform-origin: center;
+  line-height: 30px;
+}
+
+section {
+  margin-left: 0;
+}
+
+.Greeting {
+  padding: 20px 0 0 100px;
+}
+
+.frame {
+  height: 60vh;
+  margin-bottom: 0;
+}
+
+.frameImage {
+  height: 47vh;
+  margin-top: 10px;
+}
+
+.box {
+  padding: 0;
+  justify-content: left;
+}
+
+}
+
+@media screen and (max-width: 450px) {
+
+html, .bigger {
+  font-size: 14px;
+}
+
+.navi {
+  font-size: .6em;
+}
+
+section {
+  margin-top: 30px;
+}
+
+.Greeting {
+  flex-direction: column;
+  padding: 0;
+}
+
+.frame, .box, .box-content {
+  transform: unset;
+  margin: 0;
+}
+
+.frame {
+  background-color: transparent;
+  width: 50vw;
+  height: calc(50vw + 3em);
+  margin: auto;
+}
+
+.frameImage {
+  width: 50vw;
+  height: 50vw;
+  margin: 0;
+}
+
+.box-content{
+  text-align: center;
+}
+
+.Skills {
+  display: flex;
+  flex-direction: column;
+}
+
+.technical {
+  grid-gap: 0;
+}
+
+.languages {
+  grid-template-columns: 45vw 45vw;
+}
+
+#sliderContainer {
+  margin: 0;
+}
+
+.imageContainer {
+  margin: 20px;
+}
+
+.left {
+  border-right-width: 20px;
+}
+
+.right {
+  border-left-width: 20px;
+}
+
+.arrow {
+  border-top-width: 10px;
+  border-bottom-width: 10px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+}
+
+
+/* @media screen and (orientation: portrait) {
+
+  html {
+    font-size: 16px;
+  }
+  
+  .frame {
+    height: 35vh;
+    margin-bottom: 40px;
+  }
+  
+  .frameImage {
+    height: 28vh;
+  }
+  
+  .box-content {
+    margin: 10px;
+  }
+  
+  .Experience {
+    flex-direction: column;
+  }
+  
+  
+  .Image {
+    width: 70vw;
+  }
+  
+  } */
