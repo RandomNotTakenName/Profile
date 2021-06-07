@@ -77,7 +77,7 @@ section {
 
 .frame {
   width: 31vw;
-  height: 75vh;
+  height: 35vw;
   background-color: white;
   transform-origin: top right;
   transform: rotate(-15deg);
@@ -86,7 +86,7 @@ section {
 
 .frameImage {
   width: 29vw;
-  height: 62vh;
+  height: calc(31vw - 2.2em);
   object-fit: cover;
   margin-top: 20px;
 }
@@ -255,6 +255,7 @@ ul {
   display: grid;
   grid-template-columns: 35vw 35vw;
   grid-template-rows: 5.5vh 5.5vh 5.5vh;
+  white-space: nowrap;
   margin: auto;
 }
 
@@ -350,6 +351,7 @@ section {
 
 .Greeting {
   padding: 20px 0 0 100px;
+  overflow: hidden;
 }
 
 .frame {
@@ -400,6 +402,10 @@ section {
   margin: auto;
 }
 
+.box-content {
+  margin: 5px;
+}
+
 .frameImage {
   width: 50vw;
   height: 50vw;
@@ -421,6 +427,10 @@ section {
 
 .languages {
   grid-template-columns: 45vw 45vw;
+}
+
+.Experience {
+  flex-direction: column;
 }
 
 #sliderContainer {
