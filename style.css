@@ -257,6 +257,7 @@ ul {
   grid-template-rows: 5.5vh 5.5vh 5.5vh;
   white-space: nowrap;
   margin: auto;
+  grid-gap: 10px;
 }
 
 .heading {
@@ -492,10 +493,6 @@ section {
   
   .Experience {
     flex-direction: column;
-  }
-  
-  .languages {
-    grid-gap: 10px;
   }
   
   .Image {
