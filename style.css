@@ -494,6 +494,9 @@ section {
     flex-direction: column;
   }
   
+  .languages {
+    grid-gap: 10px;
+  }
   
   .Image {
     width: 70vw;
