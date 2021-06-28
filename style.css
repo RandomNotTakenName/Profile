@@ -347,6 +347,7 @@ nav {
 
 section {
   margin-left: 0;
+  margin-top: 30px;
 }
 
 .Greeting {
@@ -355,18 +356,22 @@ section {
 }
 
 .frame {
-  height: 60vh;
+  height: 40vw;
   margin-bottom: 0;
 }
 
 .frameImage {
-  height: 47vh;
+  height: calc(40vw - 4em);
   margin-top: 10px;
 }
 
 .box {
   padding: 0;
   justify-content: left;
+}
+
+.Image {
+  width: 40vw;
 }
 
 }
@@ -459,10 +464,14 @@ section {
   height: 20px;
 }
 
+.Image {
+  width: 90vw;
+}
+
 }
 
 
-/* @media screen and (orientation: portrait) {
+@media screen and (max-width: 450px) and (orientation: landscape) {
 
   html {
     font-size: 16px;
@@ -490,4 +499,4 @@ section {
     width: 70vw;
   }
   
-  } */
+  }
